@@ -1,3 +1,4 @@
+#!/bin/bash
 yum -y install amazon-cloudwatch-agent
 amazon-linux-extras install -y collectd
 yum -y install collectd-curl
