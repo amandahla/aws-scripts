@@ -55,10 +55,10 @@ cat <<EOT > /opt/aws/amazon-cloudwatch-agent/bin/config.json
    },
    "metrics":{
      "append_dimensions":{
-         "AutoScalingGroupName":"${aws:AutoScalingGroupName}",
-         "ImageId":"${aws:ImageId}",
-         "InstanceId":"${aws:InstanceId}",
-         "InstanceType":"${aws:InstanceType}"
+         "AutoScalingGroupName":"\${aws:AutoScalingGroupName}",
+         "ImageId":"\${aws:ImageId}",
+         "InstanceId":"\${aws:InstanceId}",
+         "InstanceType":"\${aws:InstanceType}"
       },
       "metrics_collected":{
          "collectd":{
